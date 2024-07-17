@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+    <title>Formulario de datos personales</title>
+    <script>
+        function cambiarEstilo(estilo) {
+            document.getElementById('stylesheet').href = estilo;
+        }
+
+        window.onload = function() {
+            document.querySelector('.botonEstilo1').addEventListener('click', function() {
+                cambiarEstilo('style.css');
+            });
+
+            document.querySelector('.botonEstiloAltoContraste').addEventListener('click', function() {
+                cambiarEstilo('style_alto_contraste.css');
+            });
+        }
+    </script>
+</head>
+
+<body>
+        <h1>Formulario de datos personales:</h1>
+        <form>
+            <div>
+                <label class="nombreCampo" for="nombre">Nombre:</label>
+                <input class="campoFormulario" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label class="nombreCampo" for="apellido">Apellido:</label>
+                <input class="campoFormulario" type="text" id="apellido" name="apellido" required>
+            </div>
+            <div>
+                <label class="nombreCampo" for="email">Email:</label>
+                <input class="campoFormulario" type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label class="nombreCampo" for="fechaDeNacimiento">Fecha de Nacimiento:</label>
+                <input class="campoFormulario" type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" required>
+            </div>
+            <div>
+                <label class="nombreCampo" for="paisDeResidencia">País de residencia:</label>
+                <input class="campoFormulario" type="text" id="paisDeResidencia" name="paisDeResidencia" required>
+            </div>
+            <button type="submit" class="botonEnviar">Enviar</button>
+        </form>
+        <button class="botonEstilo1">Estilo 1</button>
+        <button class="botonEstiloAltoContraste">Estilo de Alto Contraste</button>
+</body>
+</html>

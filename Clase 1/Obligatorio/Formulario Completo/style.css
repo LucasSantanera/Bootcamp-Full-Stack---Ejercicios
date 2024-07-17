@@ -1,0 +1,73 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    margin: auto;
+    padding-left: 20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+div{
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.nombreCampo {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campoFormulario {
+    width: 90%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.botonEnviar { 
+    width: 90%;
+    height: 40px;
+    margin-left: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.botonEstilo1 {
+    display: block;
+    margin: auto;
+    width: 27%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.botonEstiloAltoContraste {
+    margin: auto;
+    display: block;
+    width: 27%;
+    height: 40px;
+}
+
+input {
+    border-radius: 5px;
+    border: 0.5px solid #dddddc;
+}
+
+h1+form {
+    border: 1px solid #dddddc;
+    border-radius: 5px;
+}
